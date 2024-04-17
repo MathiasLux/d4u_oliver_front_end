@@ -51,7 +51,7 @@ export class LoginComponent {
 	// Type Safe Forms from Angular v14 ---------------------
 	// registerForm = inject(FormBuilder).nonNullable.group({
 	loginForm: FormGroup<LoginFormType> = inject(FormBuilder).nonNullable.group({
-		email: ['sami@gmx.at', [Validators.required, Validators.email]],
+		email: ['user1@spg.at', [Validators.required, Validators.email]],
 		password: ['spengergasse', [Validators.required, CustomValidators.passwordStrength(3)]],
 	});
 

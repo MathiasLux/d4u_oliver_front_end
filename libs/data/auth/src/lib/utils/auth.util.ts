@@ -1,5 +1,5 @@
 // (username,password) -> 'Basic base64(username:password)'
-// btoa('sam@gmx.at:123456') -> "cmVuZUBnbXguYXQ6MTIzNDU2"
+// btoa('rene@gmx.at:123456') -> "cmVuZUBnbXguYXQ6MTIzNDU2"
 import { HttpHeaders } from '@angular/common/http';
 import { AUTH_HEADER, AuthToken } from '../model/auth.model';
 
@@ -8,7 +8,6 @@ import { AUTH_HEADER, AuthToken } from '../model/auth.model';
 // const headers = new HttpHeaders({
 //   'Authorization': 'Basic ' + btoa(command.email + ':' + command.password)
 // });
-
 export function generateAuthToken(username: string, password: string): AuthToken {
 	return `Basic ${btoa(username + ':' + password)}`;
 	// return 'Basic ' + btoa(username + ':' + password);
