@@ -1,5 +1,5 @@
 // (username,password) -> 'Basic base64(username:password)'
-// btoa('rene@gmx.at:123456') -> "cmVuZUBnbXguYXQ6MTIzNDU2"
+// btoa('sam@gmx.at:123456') -> "cmVuZUBnbXguYXQ6MTIzNDU2"
 import { HttpHeaders } from '@angular/common/http';
 import { AUTH_HEADER, AuthToken } from '../model/auth.model';
 
